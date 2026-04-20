@@ -2,22 +2,33 @@
 using namespace std;
 
 int main() {
+    double n1, p1, k1;
+    double n2, p2, k2;
+    double n3, p3, k3;
 
-    double n1, n2, n3;
-    double p1, p2, p3;
-    double k1, k2, k3;
+    cout << "Enter n1: ";
+    cin >> n1;
+    cout << "Enter p1: ";
+    cin >> p1;
+    cout << "Enter k1: ";
+    cin >> k1;
 
-    // Input
-    cout << "Enter n1 n2 n3: ";
-    cin >> n1 >> n2 >> n3;
+    cout << "Enter n2: ";
+    cin >> n2;
+    cout << "Enter p2: ";
+    cin >> p2;
+    cout << "Enter k2: ";
+    cin >> k2;
 
-    cout << "Enter p1 p2 p3: ";
-    cin >> p1 >> p2 >> p3;
-
-    cout << "Enter k1 k2 k3: ";
-    cin >> k1 >> k2 >> k3;
+    cout << "Enter n3: ";
+    cin >> n3;
+    cout << "Enter p3: ";
+    cin >> p3;
+    cout << "Enter k3: ";
+    cin >> k3;
 
     double M1, M2, M3;
+<<<<<<< HEAD
     
     double A = (n2 - n3 + p3 - p2);
     double B = (n1 - n3 + p3 - p1);
@@ -25,10 +36,23 @@ int main() {
 
     double numerator = (k3 - n3 + n1 - k1) + C * (A / B);
     double denominator = (k3 - n3) + C * (A / (p3 - n3));
+=======
 
-    M1 = numerator / denominator;
+    double part1 = (n2 - n3 + p3 - p2);
+    double part2 = (n1 - n3 + p3 - p1);
+    double part3 = (n3 - n2 + k2 - k3);
 
+    double top = (k3 - n3 + n1 - k1) + part3 * ((n2 - n3 + p3 - p2) / (n1 - n3 + p3 - p1));
+    double bottom = (k3 - n3) + part3 * ((n2 - n3 + p3 - p2) / (p3 - n3));
+>>>>>>> dbc5e62 (finished gardening)
+
+    M1 = top / bottom;
+
+<<<<<<< HEAD
     M2 = A / ((p3 - n3) - M1 * B);
+=======
+    M2 = (p3 - n3 - M1 * (n1 - n3 + p3 - p1)) / (n2 - n3 + p3 - p2);
+>>>>>>> dbc5e62 (finished gardening)
 
     M3 = 1 - M1 - M2;
 
