@@ -1,0 +1,9 @@
+For this part of the assignment, I used an AI tool to generate a solution for the gardening problem and saved it as ai_gardening.cpp.
+
+Two things the AI did well were organizing the equations into parts so it was less coding and using clear variable names. 
+This made the code easier to read and follow. The AI also followed the assignment instructions by taking input and printing results.
+
+Two potential problems were that the formulas are complex and hard to verify, which could lead to unnoticed errors. Another issue is that the code did not include much explanation, which could make debugging harder.
+
+I would not fully trust AI-generated code in a real project without testing it first. 
+I would check the results with known values to make sure it is correct.

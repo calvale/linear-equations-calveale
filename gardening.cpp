@@ -42,12 +42,22 @@ int main() {
 
     double top = (k3 - n3 + n1 - k1) + part3 * ((n2 - n3 + p3 - p2) / (n1 - n3 + p3 - p1));
     double bottom = (k3 - n3) + part3 * ((n2 - n3 + p3 - p2) / (p3 - n3));
+<<<<<<< HEAD
+=======
+
+>>>>>>> bae0e2e (added AI files)
 
     M1 = top / bottom;
 
     M2 = A / ((p3 - n3) - M1 * B);
+<<<<<<< HEAD
     
     M2 = (p3 - n3 - M1 * (n1 - n3 + p3 - p1)) / (n2 - n3 + p3 - p2);
+=======
+
+    M2 = (p3 - n3 - M1 * (n1 - n3 + p3 - p1)) / (n2 - n3 + p3 - p2);
+
+>>>>>>> bae0e2e (added AI files)
 
     M3 = 1 - M1 - M2;
 
