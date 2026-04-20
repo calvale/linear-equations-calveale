@@ -28,7 +28,6 @@ int main() {
     cin >> k3;
 
     double M1, M2, M3;
-<<<<<<< HEAD
     
     double A = (n2 - n3 + p3 - p2);
     double B = (n1 - n3 + p3 - p1);
@@ -36,7 +35,6 @@ int main() {
 
     double numerator = (k3 - n3 + n1 - k1) + C * (A / B);
     double denominator = (k3 - n3) + C * (A / (p3 - n3));
-=======
 
     double part1 = (n2 - n3 + p3 - p2);
     double part2 = (n1 - n3 + p3 - p1);
@@ -44,15 +42,12 @@ int main() {
 
     double top = (k3 - n3 + n1 - k1) + part3 * ((n2 - n3 + p3 - p2) / (n1 - n3 + p3 - p1));
     double bottom = (k3 - n3) + part3 * ((n2 - n3 + p3 - p2) / (p3 - n3));
->>>>>>> dbc5e62 (finished gardening)
 
     M1 = top / bottom;
 
-<<<<<<< HEAD
     M2 = A / ((p3 - n3) - M1 * B);
-=======
+    
     M2 = (p3 - n3 - M1 * (n1 - n3 + p3 - p1)) / (n2 - n3 + p3 - p2);
->>>>>>> dbc5e62 (finished gardening)
 
     M3 = 1 - M1 - M2;
 
